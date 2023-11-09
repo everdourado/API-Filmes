@@ -9,7 +9,7 @@ import Search from './pages/Search.jsx';
 
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
