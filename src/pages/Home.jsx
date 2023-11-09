@@ -1,16 +1,15 @@
 import { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
 
-const moviesUrl = import.meta.env.VITE_API;
-const apiKey = import.meta.env.VITE_API_KEY;
-
+const apiKey = import.meta.env.KEY;
+const moviesUrl = import.meta.env.API;
 
 const Home = () => {
     const [topMovies, setTopMovies] = useState([]);
 
-    const getTopRatedMovies = async (url) => {
+    const getTopRatedMovies = async (uri) => {
 
-        const res = await fetch(url);
+        const res = await fetch(uri);
         const data = await res.json();
 
         setTopMovies(data.results);
