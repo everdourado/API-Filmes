@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="Navbar">
+    <nav id="navbar">
       <h2>
         <Link to="/">
           <BiCameraMovie /> MoviesLib
